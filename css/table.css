@@ -1,0 +1,38 @@
+.table {
+    margin: auto;
+    border-collapse: collapse;
+    width: 70%;
+}
+
+.table__caption {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.table__cell {
+    border-color: rgb(0, 0, 0);
+    border-width: 1px;
+    border-style: solid;
+    padding: 15px;
+    text-align: center;
+}
+
+.table__cell--header {
+    background-color: rgba(129, 117, 92, 0.845);
+    color: rgb(255, 255, 255);
+    font-weight: normal;
+}
+
+.table__header {
+    background-color: rgba(129, 117, 92, 0.845);
+    color: rgb(255, 255, 255);
+    font-weight: normal;
+}
+
+.table__row:nth-child(even) {
+    background-color: rgba(124, 126, 91, 0.66);
+}
+
+.table__row:hover {
+    background: rgb(68, 138, 50);
+}

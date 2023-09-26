@@ -1,0 +1,24 @@
+.section__subHeader {
+    border-bottom: rgb(24, 22, 22) 4px solid;
+}
+
+.section__rightCol {
+    float: right;
+    max-width: 250px;
+    background-color: rgb(245, 245, 220);
+}
+
+.section__knowledge {
+    display: block;
+    background: rgb(76, 152, 68);
+    color: rgb(255, 255, 255);
+    padding: 10px 0 10px 12px;
+    font-weight: bold;
+}
+
+.section__field {
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    font-weight: normal;
+    font-size: 16px;
+}
