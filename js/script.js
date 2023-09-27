@@ -1,11 +1,22 @@
-console.log("Hello!!!");
+{
+    const welcome = () => {
+        console.log("Hello everyone!!! It's really nice to see you here.");
+    }
+    
+    const toggleBackground = () => {
+        const body = document.querySelector(".js-body");
+        const nextColor = document.querySelector(".js-nextColor");
 
-let navigationButtonElement = document.querySelector('.js-navigationButton');
-let body = document.querySelector('.body');
-let themeName = document.querySelector('.themeName');
+        body.classList.toggle("body--nextColor");
+        nextColor.innerText = body.classList.contains("body--nextColor") ? "ciemny" : "jasny";
+    }; 
+    
+    const init = () => {
+        const navigationButtonElement = document.querySelector(".js-navigationButton");   
+        navigationButtonElement.addEventListener("click", toggleBackground);
 
-navigationButtonElement.addEventListener("click", () => {
-    body.classList.toggle('changeTheme');
+        welcome();
+    };
 
-    themeName.innerText = body.classList.contains("changeTheme") ? "ciemny" : "jasny";
-})
+    init();
+};

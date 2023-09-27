@@ -15,8 +15,8 @@ html {
     padding: 5px;
 }
 
- .changeTheme {
-    background: rgb(238, 238, 238);
+.body--nextColor {
+    background-color: rgb(255, 255, 255);
  }
 
  .header {
